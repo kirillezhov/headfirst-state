@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 
 namespace State
 {
-    class Program
+    class GumballMachineTestDrive
     {
         static void Main(string[] args)
         {
+            GumballMachine gumballMachine = new GumballMachine(5);
+
+            gumballMachine.InsertQuarter();
+            gumballMachine.TurnCrank();
+
+            gumballMachine.InsertQuarter();
+            gumballMachine.TurnCrank();
+            gumballMachine.InsertQuarter();
+            gumballMachine.TurnCrank();
+
+            Console.ReadKey();
         }
     }
 }
